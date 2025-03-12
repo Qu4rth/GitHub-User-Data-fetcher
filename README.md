@@ -8,7 +8,7 @@ GitHub User Data fetcher jest API'm opartym na **Quarkus**, które umożliwia:
 - Sprawdzanie, czy użytkownik istnieje na GitHubie.
 
 API zwraca dane w formacie **JSON** i obsługuje błędy zwracając odpowiednie statusy HTTP.
-
+Aplikacja domyślnie działa na **http://localhost:8080**
 ---
 
 ## Wymagania
@@ -34,16 +34,6 @@ Jeśli API GitHuba wymaga uwierzytelnienia, można dodać token, w przeciwnym ra
 github-api/mp-rest/interceptors=com.example.auth.GitHubAuthInterceptor
 github-api/token=ghp_your_personal_access_token
 ```
-
----
-
-## Uruchamianie aplikacji
-Aby uruchomić aplikację lokalnie, użyj polecenia:
-```sh
-mvn GitHubUserDataFetcher:dev
-```
-
-Aplikacja domyślnie działa na **http://localhost:8080**
 
 ---
 
